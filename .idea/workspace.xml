@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5b19d720-dfb4-4499-8978-8c41759a5734" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +27,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/julio.mora01/Documents/AppMoviles Repositories/Mora-Aguirre-Julio-Alfredo-Moviles",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -36,7 +43,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669138527367</updated>
       <workItem from="1669138528647" duration="6000" />
-      <workItem from="1670291578791" duration="41000" />
+      <workItem from="1670291578791" duration="464000" />
     </task>
     <servers />
   </component>
