@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "582426667029",
+    "project_id": "movcomp-jama",
+    "storage_bucket": "movcomp-jama.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582426667029:android:63a99817b21b3fc8ddc61c",
+        "android_client_info": {
+          "package_name": "com.example.movcompjama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582426667029-lv3da6tgvcmuprifabukprdjcpnk0l39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL7WSj8fre2byDvojCOikYnhZCX0MdjVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582426667029-lv3da6tgvcmuprifabukprdjcpnk0l39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
