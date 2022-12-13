@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="c491f3ce-9d9e-4b3f-98b4-bf88976cb70a" name="Changes" comment="" />
+=======
+    <list default="true" id="c24f9c0c-d925-4b32-afe7-42015d0f6e73" name="Changes" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +22,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectId" id="2Iol3DvvL97Hq7a5IBAkpCDEy9d" />
+=======
+  <component name="ProjectId" id="2Iov5OHfJVKJhWWPSl7fZFpAMro" />
+>>>>>>> Stashed changes
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,12 +46,21 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< Updated upstream
       <changelist id="c491f3ce-9d9e-4b3f-98b4-bf88976cb70a" name="Changes" comment="" />
       <created>1670855621182</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670855621182</updated>
       <workItem from="1670855622534" duration="1894000" />
+=======
+      <changelist id="c24f9c0c-d925-4b32-afe7-42015d0f6e73" name="Changes" comment="" />
+      <created>1670860571157</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670860571157</updated>
+      <workItem from="1670860572850" duration="1834000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
