@@ -7,15 +7,21 @@ fun main(args: Array<String>) {
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
     println("Program arguments: ${args.joinToString()}")
 
+
+    //Variables inmutables: (no se pueden reasingar)
+
     val inmutable: String = "Julio";
 
     var mutable:String = "Aldredo";
+
+    //Variables mutables: (se pueden reasignar)
 
     mutable = "Mora";
 
     println(mutable+inmutable);
 
-    //duck typing
+    //Variables a usar
+    //Duck Typing
 
     val ejemploVariable = "Ejemplo"
 
@@ -45,10 +51,23 @@ fun main(args: Array<String>) {
 
     }
 
-    //val coqueteo = if (estadocivil)
+    val coqueteo = if (estadoCivilWhen == "S") "Si" else "No"
+
+
+    val sumaUno = Suma(1, 2)
+    var sumaDos = Suma(1, null)
+    var sumaTres = Suma(null, 2)
+    var sumaCuatro = Suma(null, null)
+    sumaUno.sumar()
+    sumaDos.sumar()
+    sumaTres.sumar()
+    sumaCuatro.sumar()
+    println(Suma.historialSumas)
+
+
 }
 
-
+//Funciones:
 fun imprimirNombre(nombre: String): Unit {
 
     println("Nombre: ${nombre}")
@@ -69,7 +88,6 @@ fun calcularSueldo(
 }
 
 // clases, clase abstracta
-
 
 abstract class NumerosJava {
     protected val numeroUno: Int
@@ -102,7 +120,6 @@ abstract  class  Numeros (
 }
 
 class Suma(
-
     uno: Int,
     dos: Int,
 ) : Numeros (
@@ -119,10 +136,9 @@ class Suma(
         uno: Int?,
         dos: Int
     ): this(
-        if (uno == null) 0 else uno,git
+        if (uno == null) 0 else uno,
         dos
     ){}
-
     constructor (
         uno: Int,
         dos: Int?
@@ -132,7 +148,6 @@ class Suma(
 
     ){}
 
-
     constructor (
         uno: Int?,
         dos: Int ?
@@ -141,5 +156,21 @@ class Suma(
         if (uno == null) 0 else dos,
     ){}
 
+    fun sumar (): Int {
 
+        val total = numeroUno + numeroDos
+
+        agregarHistoria(total)
+
+        return total
+    }
+
+    companion object{ //todo lo que se tenga aqui, pueden ser metodos disponibles dentro de esta clase
+    val pi = 3.14// suma suma.pi ---> 3.14
+        val historialSumas = arrayListOf<Int>()//suma.historialSumas
+        fun agregarHistoria(valorNuevaSuma: Int){//Suma.agregarHistorial
+            historialSumas.add(valorNuevaSuma)
+
+        }
+    }
 }
