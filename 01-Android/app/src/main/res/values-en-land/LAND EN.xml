@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="texto1">julio1</string>
+    <color name="color_texto1">#BFF9FF31</color>
+    <color name="color_background_texto1">#BF818172</color>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="texto2">julio2</string>
+    <color name="color_texto2">#1CDF20</color>
+    <color name="color_background_texto2">#BFF9FF31</color>
+
+</resources>

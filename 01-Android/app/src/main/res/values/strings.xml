@@ -1,3 +1,24 @@
 <resources>
+
     <string name="app_name">MovCompJAMA</string>
+    <string name="hola_mundo">Hola mundo</string>
+    <color name="color_hola_mundo">#FF018786</color>
+
+
+    <string name="texto1">texto1</string>
+    <color name="color_texto1">#BFF9FF31</color>
+
+
+    <string name="texto2">texto2</string>
+    <color name="color_texto2">#1CDF20</color>
+
+
+    <string name="texto3">texto3</string>
+    <color name="color_texto3">#877122</color>
+
+
+    <string name="texto4">texto4</string>
+    <color name="color_texto4">#FF013386</color>
+
+
 </resources>
