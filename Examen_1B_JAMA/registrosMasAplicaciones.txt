@@ -1,0 +1,4 @@
+Id: 0	Celular: nombreCelular=Xiaomi10Lite, numeroCamaras=1, fechaFabricacion=2019-10-01, precioCelular=210.8, dobleLinea=true
+		Aplicacion:  --> [idAplicacion=1, nombreAplicacion=FaceBook, numeroEstrellas=4.4, fechaLanzamiento=2010-09-28, restriccionEdad=true, idAplicacion=2, nombreAplicacion=Instagram, numeroEstrellas=4.7, fechaLanzamiento=2012-01-28, restriccionEdad=true]
+Id: 1	Celular: nombreCelular=SamsungA21, numeroCamaras=2, fechaFabricacion=2021-01-01, precioCelular=150.0, dobleLinea=true
+		Aplicacion:  --> [idAplicacion=0, nombreAplicacion=Musica, numeroEstrellas=4.2, fechaLanzamiento=2020-01-17, restriccionEdad=true]
