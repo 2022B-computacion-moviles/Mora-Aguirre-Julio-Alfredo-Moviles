@@ -34,21 +34,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Juls/Documents/Moviles/GitHub/Mora-Aguirre-Julio-Alfredo-Moviles/Examen_1B_JAMA",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Deber01JAMA" />
+  </component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Examen_1B_JAMA.main" />
+      <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -70,6 +64,9 @@
       <workItem from="1674434422418" duration="39061000" />
       <workItem from="1674511522674" duration="9442000" />
       <workItem from="1674527151568" duration="16864000" />
+      <workItem from="1674852132697" duration="4000" />
+      <workItem from="1675041598471" duration="24000" />
+      <workItem from="1675545352694" duration="2689000" />
     </task>
     <servers />
   </component>
