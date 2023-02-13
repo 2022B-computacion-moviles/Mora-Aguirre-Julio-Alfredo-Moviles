@@ -27,11 +27,11 @@ class EditarCelular : AppCompatActivity() {
         etFechaFabricacion.text = getCeular!!.fechaFabricacion
         etDobleLinea.text = getCeular!!.dobleLinea
 
-        val btnEditarFacultad = findViewById<Button>(R.id.btn_Editar)
-        btnEditarFacultad
+        val btnEditarCelular = findViewById<Button>(R.id.btn_Editar)
+        btnEditarCelular
             .setOnClickListener {
 
-                BaseDatosMemoria.TablaFacEst!!.actualizarCelular(
+                BaseDatosMemoria.TablaCelularAplicacion!!.actualizarCelular(
                     etCodCelular.text.toString(),
                     etNombreCelular.text.toString(),
                     etNumeroCamarasCelular.text.toString().toInt(),

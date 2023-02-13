@@ -36,8 +36,8 @@ class AcCelular : AppCompatActivity() {
         setContentView(R.layout.activity_celular)
 
         //base Celular
-        BaseDatosMemoria.TablaFacEst = sqlHelperFacEst(this)
-        arreglo = BaseDatosMemoria.TablaFacEst!!.consultarCelulares()
+        BaseDatosMemoria.TablaCelularAplicacion = sqlHelperCelularAplicacion(this)
+        arreglo = BaseDatosMemoria.TablaCelularAplicacion!!.consultarCelulares()
 
         //Listview
         listview = findViewById<ListView>(R.id.lvCelular)
@@ -160,8 +160,8 @@ class AcCelular : AppCompatActivity() {
                 //Por positivo
 
 
-                if (BaseDatosMemoria.TablaFacEst != null) {
-                    BaseDatosMemoria.TablaFacEst!!.crearCelular(
+                if (BaseDatosMemoria.TablaCelularAplicacion != null) {
+                    BaseDatosMemoria.TablaCelularAplicacion!!.crearCelular(
                         codCelular_crear.text.toString(),
                         nombreCelular_crear.text.toString(),
                         numeroCamaras_crear.text.toString().toInt(),
@@ -171,12 +171,12 @@ class AcCelular : AppCompatActivity() {
                 }
 
                 arreglo.clear()
-                arreglo.addAll(BaseDatosMemoria.TablaFacEst!!.consultarCelulares())
+                arreglo.addAll(BaseDatosMemoria.TablaCelularAplicacion!!.consultarCelulares())
 
                 adaptador.notifyDataSetChanged()
 
             }
-            setNegativeButton("Cancel") { dialog, which ->
+            setNegativeButton("Cancelar") { dialog, which ->
                 //caso contrario
             }
             setView(dialogLayout)
@@ -192,14 +192,14 @@ class AcCelular : AppCompatActivity() {
     ) {
 
 
-        if (BaseDatosMemoria.TablaFacEst != null) {
-            BaseDatosMemoria.TablaFacEst!!.eliminarCelular(
+        if (BaseDatosMemoria.TablaCelularAplicacion != null) {
+            BaseDatosMemoria.TablaCelularAplicacion!!.eliminarCelular(
                 codCelular
             )
         }
 
         arreglo.clear()
-        arreglo.addAll(BaseDatosMemoria.TablaFacEst!!.consultarCelulares())
+        arreglo.addAll(BaseDatosMemoria.TablaCelularAplicacion!!.consultarCelulares())
 
         adaptador.notifyDataSetChanged()
     }

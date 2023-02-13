@@ -5,9 +5,9 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-class sqlHelperFacEst(contexto: Context?) : SQLiteOpenHelper(
+class sqlHelperCelularAplicacion(contexto: Context?) : SQLiteOpenHelper(
     contexto,
-    "deber_01_JAMA",
+    "Deber_01_JAMA",
     null,
     1
 ) {
@@ -55,7 +55,7 @@ class sqlHelperFacEst(contexto: Context?) : SQLiteOpenHelper(
         val valoresGuardar = ContentValues()
         valoresGuardar.put("codCelular", codCelular)
         valoresGuardar.put("nombreCelular", nombreCelular)
-        valoresGuardar.put("numCamaras", numeroCamaras)
+        valoresGuardar.put("numeroCamaras", numeroCamaras)
         valoresGuardar.put("fechaFabricacion", fechaFabricacion)
         valoresGuardar.put("dobleLinea", dobleLinea)
 

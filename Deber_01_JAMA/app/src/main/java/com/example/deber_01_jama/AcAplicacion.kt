@@ -4,7 +4,6 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.ContextMenu
 import android.view.MenuItem
 import android.view.View
@@ -40,7 +39,7 @@ class AcAplicacion : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_aplicacion)
 
-        val verAplicacion = intent.getParcelableExtra<Celular>("verAplicaciones")
+        val verAplicacion = intent.getParcelableExtra   <Celular>("verAplicaciones")
         var tvAplicacion = findViewById<TextView>(R.id.tvAplicacion)
 
         //referencia al codCelular no al codAplicacion
@@ -51,7 +50,7 @@ class AcAplicacion : AppCompatActivity() {
 
 
 
-        arreglo = BaseDatosMemoria.TablaFacEst!!.consultarAplicaciones(verAplicacion!!.codCelular!!)
+        arreglo = BaseDatosMemoria.TablaCelularAplicacion!!.consultarAplicaciones(verAplicacion!!.codCelular!!)
 
 
 
@@ -167,8 +166,8 @@ class AcAplicacion : AppCompatActivity() {
             setPositiveButton("OK") { dialog, which ->
                 //Por positivo
 
-                if (BaseDatosMemoria.TablaFacEst != null) {
-                    BaseDatosMemoria.TablaFacEst!!.crearAplicacion(
+                if (BaseDatosMemoria.TablaCelularAplicacion != null) {
+                    BaseDatosMemoria.TablaCelularAplicacion!!.crearAplicacion(
                         nombreAplicacion_crear.text.toString(),
                         descripcion_crear.text.toString(),
                         valoraciones_crear.text.toString(),
@@ -178,7 +177,7 @@ class AcAplicacion : AppCompatActivity() {
                     )
                 }
                 arreglo.clear()
-                arreglo.addAll(BaseDatosMemoria.TablaFacEst!!.consultarAplicaciones(codi))
+                arreglo.addAll(BaseDatosMemoria.TablaCelularAplicacion!!.consultarAplicaciones(codi))
                 adaptador.notifyDataSetChanged()
             }
             setNegativeButton("Cancel") { dialog, which ->
@@ -220,15 +219,15 @@ class AcAplicacion : AppCompatActivity() {
     ) {
 
 
-        if (BaseDatosMemoria.TablaFacEst != null) {
-            BaseDatosMemoria.TablaFacEst!!.eliminarAplicacion(
+        if (BaseDatosMemoria.TablaCelularAplicacion != null) {
+            BaseDatosMemoria.TablaCelularAplicacion!!.eliminarAplicacion(
                 id
             )
         }
 
 
         arreglo.clear()
-        arreglo.addAll(BaseDatosMemoria.TablaFacEst!!.consultarAplicaciones(cod))
+        arreglo.addAll(BaseDatosMemoria.TablaCelularAplicacion!!.consultarAplicaciones(cod))
         adaptador.notifyDataSetChanged()
 
     }

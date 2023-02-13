@@ -31,7 +31,7 @@ class EditarAplicacion : AppCompatActivity() {
         btnEditarEst
             .setOnClickListener {
 
-                BaseDatosMemoria.TablaFacEst!!.actualizarAplicacion(
+                BaseDatosMemoria.TablaCelularAplicacion!!.actualizarAplicacion(
                     id!!,
                     etNombreAplicacion.text.toString(),
                     etDescripcion.text.toString(),
