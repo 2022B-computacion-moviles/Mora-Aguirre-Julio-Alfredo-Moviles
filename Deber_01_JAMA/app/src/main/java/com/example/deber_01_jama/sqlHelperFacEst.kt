@@ -49,8 +49,7 @@ class sqlHelperFacEst(contexto: Context?) : SQLiteOpenHelper(
         fechaFabricacion: String,
         dobleLinea: String
     ): Boolean {
-        //this.readableDatabase
-        //this.writableDatabase
+
 
         val basedatosEscritura = writableDatabase
         val valoresGuardar = ContentValues()
@@ -83,12 +82,12 @@ class sqlHelperFacEst(contexto: Context?) : SQLiteOpenHelper(
         if (resultadoConsultaLectura != null && resultadoConsultaLectura.count !=0) {
             resultadoConsultaLectura.moveToFirst()
             do {
-                //Asignamos el valor en nuestras variables para usarlos en lo que necesitemos
-                val codCelular = resultadoConsultaLectura.getString(0) // columna indice 0 -> ID
-                val nombreCelular = resultadoConsultaLectura.getString(1) // Columna indice 1 -> NOMBRE
-                val numeroCamaras = resultadoConsultaLectura.getInt(2) // Columna indice 2 -> DESCRIPCION
-                val fechaFabricacion = resultadoConsultaLectura.getString(3) // Columna indice 1 ->
-                val dobleLinea = resultadoConsultaLectura.getString(4) // Columna indice 2 ->
+                //valor a las variables
+                val codCelular = resultadoConsultaLectura.getString(0)
+                val nombreCelular = resultadoConsultaLectura.getString(1)
+                val numeroCamaras = resultadoConsultaLectura.getInt(2)
+                val fechaFabricacion = resultadoConsultaLectura.getString(3)
+                val dobleLinea = resultadoConsultaLectura.getString(4)
 
                 if (codCelular != null) {
                     celularEncontrado.codCelular = codCelular
@@ -128,12 +127,12 @@ class sqlHelperFacEst(contexto: Context?) : SQLiteOpenHelper(
 
         val resultadoActualizacion = conexionEscritura
             .update(
-                "celular", // Nombre tabla
-                valoresAActualizar,  // Valores a actualizar
-                "codCelular=?", // Clausula Where
+                "celular",
+                valoresAActualizar,  // Valor actualizar
+                "codCelular=?",
                 arrayOf(
                     codCelularActualizar
-                ) // Parametros clausula Where
+                ) // Parametros Where
             )
         conexionEscritura.close()
         return if (resultadoActualizacion == -1) false else true
@@ -141,12 +140,9 @@ class sqlHelperFacEst(contexto: Context?) : SQLiteOpenHelper(
     }
 
     fun eliminarCelular(codCelular: String): Boolean {
-        //        val conexionEscritura = this.writableDatabase
+
         val conexionEscritura = writableDatabase
-        // "SELECT * FROM USUARIO WHERE ID = ?"
-        // arrayOf(
-        //    id.toString()
-        // )
+
         val resultadoEliminacion = conexionEscritura
             .delete(
                 "celular",
@@ -170,8 +166,6 @@ class sqlHelperFacEst(contexto: Context?) : SQLiteOpenHelper(
         numeroDescargas: Int,
         cod: String
     ): Boolean {
-        //this.readableDatabase
-        //this.writableDatabase
 
         val basedatosEscritura = writableDatabase
         val valoresGuardar = ContentValues()
@@ -204,7 +198,7 @@ class sqlHelperFacEst(contexto: Context?) : SQLiteOpenHelper(
         if (resultadoConsultaLectura != null && resultadoConsultaLectura.count!=0) {
             resultadoConsultaLectura.moveToFirst()
             do {
-                //Asignamos el valor en nuestras variables para usarlos en lo que necesitemos
+                //valor a variables
                 val id = resultadoConsultaLectura.getInt(0)
                 val nombreAplicacion = resultadoConsultaLectura.getString(1) // columna indice 0 -> ID
                 val descripcion = resultadoConsultaLectura.getString(2) // Columna indice 1 -> NOMBRE
@@ -236,12 +230,9 @@ class sqlHelperFacEst(contexto: Context?) : SQLiteOpenHelper(
     }
 
     fun eliminarAplicacion(id: Int): Boolean {
-        //        val conexionEscritura = this.writableDatabase
+
         val conexionEscritura = writableDatabase
-        // "SELECT * FROM USUARIO WHERE ID = ?"
-        // arrayOf(
-        //    id.toString()
-        // )
+
         val resultadoEliminacion = conexionEscritura
             .delete(
                 "aplicacion",
@@ -270,12 +261,12 @@ class sqlHelperFacEst(contexto: Context?) : SQLiteOpenHelper(
 
         val resultadoActualizacion = conexionEscritura
             .update(
-                "aplicacion", // Nombre tabla
-                valoresAActualizar,  // Valores a actualizar
-                "id=?", // Clausula Where
+                "aplicacion",
+                valoresAActualizar,  // Valor actualizar
+                "id=?",
                 arrayOf(
                     idActualizar.toString()
-                ) // Parametros clausula Where
+                )
             )
         conexionEscritura.close()
         return if (resultadoActualizacion == -1) false else true

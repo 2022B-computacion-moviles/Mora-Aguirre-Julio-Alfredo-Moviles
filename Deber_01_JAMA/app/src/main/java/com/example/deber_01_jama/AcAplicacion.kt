@@ -91,10 +91,10 @@ class AcAplicacion : AppCompatActivity() {
         super.onCreateContextMenu(menu, v, menuInfo)
 
 
-        //llenamos las opciones del menu
+        //MENU
         val inflater = menuInflater
         inflater.inflate(R.menu.menu_aplicacion, menu)
-        //Obtener el id del ArrayListSeleccionado
+        //id ArrayListSeleccionado
         val info = menuInfo as AdapterView.AdapterContextMenuInfo
         val id = info.position
 
@@ -182,7 +182,7 @@ class AcAplicacion : AppCompatActivity() {
                 adaptador.notifyDataSetChanged()
             }
             setNegativeButton("Cancel") { dialog, which ->
-                //Por negativo
+                //caso contrario
             }
 
             setView(dialogLayout)

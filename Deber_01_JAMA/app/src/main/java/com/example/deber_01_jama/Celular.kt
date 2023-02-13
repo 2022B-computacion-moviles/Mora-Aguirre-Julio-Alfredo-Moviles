@@ -28,7 +28,7 @@ class Celular(
 
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-        //Escribir String
+
         parcel.writeString(codCelular)
         parcel.writeString(nombreCelular)
         parcel.writeInt(numeroCamaras!!)
