@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarCelular">
+
+    <EditText
+        android:id="@+id/et_CodCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Editar"
+        app:layout_constraintStart_toStartOf="@+id/tv_Editar"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Editar" />
+
+    <EditText
+        android:id="@+id/et_NombreCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/et_CodCelular"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_CodCelular"
+        app:layout_constraintTop_toBottomOf="@+id/et_CodCelular" />
+
+    <EditText
+        android:id="@+id/et_NumeroCamarasCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/et_NombreCelular"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_NombreCelular"
+        app:layout_constraintTop_toBottomOf="@+id/et_NombreCelular" />
+
+    <EditText
+        android:id="@+id/et_FechaFabricacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/et_NumeroCamarasCelular"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_NumeroCamarasCelular"
+        app:layout_constraintTop_toBottomOf="@+id/et_NumeroCamarasCelular" />
+
+    <EditText
+        android:id="@+id/et_dobleLinea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/et_FechaFabricacion"
+        app:layout_constraintStart_toStartOf="@+id/et_FechaFabricacion"
+        app:layout_constraintTop_toBottomOf="@+id/et_FechaFabricacion" />
+
+    <Button
+        android:id="@+id/btn_Editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Aceptar"
+        app:layout_constraintEnd_toEndOf="@+id/et_dobleLinea"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/et_dobleLinea"
+        app:layout_constraintTop_toBottomOf="@+id/et_dobleLinea" />
+
+    <TextView
+        android:id="@+id/tv_Editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

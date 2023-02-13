@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarAplicacion">
+
+    <TextView
+        android:id="@+id/tv_EditarAplicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_NombreAplicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/tv_EditarAplicacion"
+        app:layout_constraintStart_toStartOf="@+id/tv_EditarAplicacion"
+        app:layout_constraintTop_toBottomOf="@+id/tv_EditarAplicacion" />
+
+    <EditText
+        android:id="@+id/et_Descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/et_NombreAplicacion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_NombreAplicacion"
+        app:layout_constraintTop_toBottomOf="@+id/et_NombreAplicacion" />
+
+    <EditText
+        android:id="@+id/et_Valoraciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/et_Descripcion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_Descripcion"
+        app:layout_constraintTop_toBottomOf="@+id/et_Descripcion" />
+
+    <EditText
+        android:id="@+id/et_NumeroDescargas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/et_Valoraciones"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_Valoraciones"
+        app:layout_constraintTop_toBottomOf="@+id/et_Valoraciones" />
+
+    <Button
+        android:id="@+id/btn_AceptarAplicaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Aceptar"
+        app:layout_constraintEnd_toEndOf="@+id/et_NumeroDescargas"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/et_NumeroDescargas"
+        app:layout_constraintTop_toBottomOf="@+id/et_NumeroDescargas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
