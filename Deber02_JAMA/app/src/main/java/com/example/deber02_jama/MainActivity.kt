@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity(), OnClickListener{
         users.add(alejandro)
         users.add(xavier)
         users.add(julio)
-          users.add(jonathan)
+        users.add(jonathan)
         users.add(kevin)
         users.add(erick)
         users.add(nadia)
