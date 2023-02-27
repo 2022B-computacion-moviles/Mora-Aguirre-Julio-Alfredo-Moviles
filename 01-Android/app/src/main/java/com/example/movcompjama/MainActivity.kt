@@ -11,7 +11,8 @@ import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContracts
 
 class MainActivity : AppCompatActivity() {
-
+//callback para recibir los datos del intent implicito, llegan los datos
+    //se revisa que los datos no sean nulos, con el result ok todo esta bien
     val contenidoIntentExplicito =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
@@ -21,7 +22,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-
+//callback este tambn recibe datos del contenido intent implicito, recibe mas datos
     val contenidoIntentImplicito =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
@@ -50,7 +51,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
+//
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -81,6 +82,7 @@ class MainActivity : AppCompatActivity() {
                 contenidoIntentImplicito.launch(intentConRespuesta)
             }
 
+    //boton intent de actividad con parametros
         val botonIntent = findViewById<Button>(R.id.btn_intent)
         botonIntent
             .setOnClickListener {
