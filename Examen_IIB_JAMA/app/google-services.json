@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "961642484737",
+    "project_id": "examen-iib-1b6bc",
+    "storage_bucket": "examen-iib-1b6bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961642484737:android:5235e6f50fa0bd51fb5c00",
+        "android_client_info": {
+          "package_name": "com.example.examen_iib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961642484737-gtdf8ql8m5vjf0uphvelmpcg5g4rpui8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHuNKq6mqryPqIFjKsDYLwkKMMY4XveNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961642484737-gtdf8ql8m5vjf0uphvelmpcg5g4rpui8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
